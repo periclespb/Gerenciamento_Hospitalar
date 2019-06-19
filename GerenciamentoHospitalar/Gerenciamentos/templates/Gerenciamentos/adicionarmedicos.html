@@ -1,0 +1,8 @@
+{% extends 'Gerenciamentos/base.html' %}
+{%block body%}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="btn btn-success btn-lg btn-block col-md-8">Salvar</button>
+</form>
+{%endblock%}
